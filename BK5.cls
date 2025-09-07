@@ -13,7 +13,11 @@
 % Packages
 % ----------------------------------------------------------------
 \RequirePackage{graphicx}
-\RequirePackage[a4paper, left=2.5cm,right=3.5cm,bottom=3.5cm]{geometry}
+\RequirePackage[a4paper,
+left=2.0cm,
+right=2.0cm,
+top=3.5cm,
+bottom=3.5cm]{geometry}
 \RequirePackage{xcolor}
 \RequirePackage{fancyhdr}
 \RequirePackage{titlesec}
@@ -26,7 +30,7 @@
 \RequirePackage{atbegshi}
 \makeatletter
 
-\graphicspath{{STDImages/}}
+\graphicspath{{Images/}}
 
 % ----------------------------------------------------------------
 % Corporate colours (approximate brand palette)
@@ -40,7 +44,7 @@
 	\ifnum\value{pagecount}>1 % Pas toe vanaf pagina 2
 	\AtBeginShipoutUpperLeft{%
 		\begin{tikzpicture}[remember picture, overlay]
-			\fill[bk-dark] (current page.north west) ++(3.0cm,0) -- (current page.north west) -- ++(0,-6.5cm) -- cycle;
+			\fill[bk-dark] (current page.north west) ++(2.7cm,0) -- (current page.north west) -- ++(0,-5.5cm) -- cycle;
 		\end{tikzpicture}
 	}
 	\fi
@@ -96,7 +100,7 @@
 \newcommand{\BKContact}[1]{\def\BK@Contact{#1}}
 
 % Standard AI note can be overwritten using /renewcommand in the file that uses this class
-\newcommand{\BKAINote}[1]{I acknowledge that I used an AI-based tool for grammar checking and rephrasing to enhance clarity and fluency in this report. The tool assisted in refining sentence structures and improving language accuracy. However, all substantive content, analyses, and interpretations remain entirely my own and are my sole responsibility.}
+\newcommand{\BKAINote}[1]{Dit verslag is taalkundig ondersteund met AI; de inhoud blijft onze eigen verantwoordelijkheid.}
 
 % ----------------------------------------------------------------
 % Title page
@@ -131,7 +135,7 @@
 		\vspace{3cm}
 		
 		\noindent
-		{\LARGE \@author \par}
+		{\Large \@author \par}
 		\small \textit{Supervisor \BK@CompanyCoach}
 		\vspace{3cm}
 		
@@ -146,7 +150,7 @@
 			\ifdefined\BK@university
 			\textbf{University} \BK@university \par
 			\fi
-			\textbf{Faculty} Afdeling Biogeuranalyse en Sociale Interactie \par
+			\textbf{Faculty} School of Business, Building \& Technology (BBT) \par
 			\ifdefined\BK@company
 			\textbf{Company} \BK@company \par
 			\fi
@@ -167,21 +171,21 @@
 			\ifdefined\BKAINote
 			\BKAINote
 			\else
-			I acknowledge that I used an AI-based tool for grammar checking and rephrasing to enhance clarity and fluency in this report. The tool assisted in refining sentence structures and improving language accuracy. However, all substantive content, analyses, and interpretations remain entirely my own and are my sole responsibility.
+			Dit verslag is taalkundig ondersteund met AI; de inhoud blijft mijn eigen verantwoordelijkheid.
 			\fi
 		}
 		
 	\end{titlepage}
 }
 
-% Option: table of contents depth
-\setcounter{tocdepth}{2}
-
 \AddToShipoutPicture*{%
 	\AtPageLowerLeft{%
-		\includegraphics[width=\paperwidth]{Background}%
+		\includegraphics[width=\paperwidth]{Footer}%
 	}
 }
+
+% Option: table of contents depth
+\setcounter{tocdepth}{2}
 
 % ----------------------------------------------------------------
 % End of class
