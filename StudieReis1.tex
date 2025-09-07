@@ -1,0 +1,83 @@
+% LaTeX template for BK5 documents IEEE based
+\documentclass{BK5}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref} % To be able to click on references etc
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{tmi}
+
+\author{ing. Florent Kegler}
+\date{\today}
+
+% Metadata
+\BKproject{Geuranalyse}
+\BKthesisSubTitle{Een chemisch-olfactorische analyse van de darmgassen van proefpersoon Dirk-Jan}
+\BKuniversity{Saxion University}
+\BKcompany{Drinking Team Wolthuis}
+\BKaddress{Rijssen, Netherlands}
+\BKCompanyCoach{dr. ir. Sven Baan} % Most metadata are optional
+
+\BKContact{kegler.florent@gmail.com}
+
+% AI note on the bottom of the file
+%\renewcommand{\BKAINote}{Different AI note}
+
+\begin{document}
+	\maketitle
+	
+	\begin{abstract}
+		In deze exploratieve studie wordt de unieke geurcompositie van de flatulentie van proefpersoon Dirk-Jan onderzocht, zoals waargenomen tijdens de festiviteiten van Sneekweek. De geur van zijn scheten wordt door omstanders consistent omschreven als een complexe mix van alcoholvrij bier (“0.0”), fysieke arbeid en traditionele droge worst. De studie combineert geurchemische analyse via GC-MS met subjectieve geurperceptie door omstanders, en observeert daarnaast het sociale effect op vrouwelijke festivalgangers. Deze gegevens worden gerelateerd aan Dirk-Jan’s voedingspatroon, darmmicrobioom en mate van lichamelijke inspanning gedurende het evenement.
+	\end{abstract}
+	
+	\section{Inleiding}
+	\IEEEPARstart{F}{latulentie} is een normaal fysiologisch fenomeen, voornamelijk veroorzaakt door fermentatieve processen in de darmen \cite{smith2013intestinal}. De geurcomponenten zijn afhankelijk van microbiële activiteit, voeding, en metabolisme. In sommige gevallen kan de geur dermate karakteristiek zijn dat deze sociaal en wetenschappelijk relevant wordt. Dit onderzoek richt zich op proefpersoon Dirk-Jan, wiens flatulentie tijdens Sneekweek als uitzonderlijk indringend en consistent herkenbaar werd geclassificeerd. De geur wordt omschreven als een "0.0-bierachtige boventoon, met een zweetachtige middennoot en een afdronk van gedroogde vleeswaren."
+	
+	\section{Methodologie}
+	\subsection{Observatieperiode}
+	Gedurende een continue periode van 48 uur tijdens Sneekweek werd Dirk-Jan geobserveerd. Gedetailleerde logs van zijn dieet, fysieke inspanning (zoals roeien, dansen, kratten tillen), en stoelgang werden bijgehouden.
+	
+	\subsection{Geurbemonstering}
+	Flatulentie werd verzameld middels vacuümbalgtechniek direct na ontlading. Monsters werden opgeslagen in gasdichte inertpolymeerzakken voor latere analyse.
+	
+	\subsection{Chemische Analyse}
+	De geurmonsters werden geanalyseerd met gaschromatografie gekoppeld aan massaspectrometrie (GC-MS), een standaardmethode voor geurcomponentanalyse \cite{pawliszyn2012handbook}. De verkregen spectra werden vergeleken met bestaande geurprofielen van voedingsmiddelen en zweetcomponenten.
+	
+	\subsection{Subjectieve Evaluatie}
+	Vier vrijwillige geurpanellisten (twee man, twee vrouw) beoordeelden de geurintensiteit, -complexiteit en -herkenbaarheid op een gestandaardiseerde Likertschaal. Daarnaast werd geobserveerd hoe vrouwelijke voorbijgangers reageerden op de geuren, die discreet via een geurverstuiver verspreid werden in openbare ruimtes.
+	
+	\section{Resultaten}
+	GC-MS toonde significante concentraties van:
+	\begin{itemize}
+		\item Isovaleriaanzuur (zweetachtig)
+		\item 2-Methylbutaanzuur (vleesachtig)
+		\item Ethylacetaat en isoamylalcohol (biergeurcomponenten)
+	\end{itemize}
+	
+	Subjectieve evaluatie bevestigde de karakterisering door omstanders. Vrouwen reageerden overwegend met afgrijzen, gevolgd door nieuwsgierige blikken en enkele spontane opmerkingen zoals “het ruikt hier alsof iemand 0.0-bier in een sportschool heeft opengetrokken.”
+	
+	\section{Discussie}
+	De combinatie van voeding (droge worst, alcoholvrij bier), inspanning (zweten), en microbiële fermentatie verklaart de complexe geurcompositie. Sociale reacties suggereren dat zulke geuren niet onopgemerkt blijven in publieke context, wat relevant is voor studies naar geurbeïnvloeding van menselijk gedrag \cite{stevenson2010chemosensory}.
+	
+	\section{Conclusie}
+	De flatulentie van Dirk-Jan is een unieke samenkomst van biochemische en sociologische factoren. Sneekweek bood een ideale setting voor deze veldstudie. Verdere studies worden aanbevolen om correlaties tussen dieet, darmflora en sociale perceptie systematisch in kaart te brengen.
+	
+	\section*{Dankwoord}
+	Dank aan Dirk-Jan voor zijn openstelling, en aan de vrijwilligers die hun neuzen letterlijk in dienst van de wetenschap hebben gesteld.
+	
+	\begin{thebibliography}{9}
+		\bibitem{smith2013intestinal}
+		E. A. Smith, and G. T. Macfarlane, "Formation of Phenolic and Indolic Compounds by Anaerobic Bacteria in the Human Large Intestine," *Microbial Ecology*, vol. 25, no. 2, pp. 103–114, 2013.
+		
+		\bibitem{pawliszyn2012handbook}
+		J. Pawliszyn, *Handbook of GC/MS: Fundamentals and Applications*, Wiley-VCH, 2012.
+		
+		\bibitem{stevenson2010chemosensory}
+		R. J. Stevenson, "An initial evaluation of the functions of human olfaction," *Chemical Senses*, vol. 35, no. 1, pp. 3–20, 2010.
+		
+	\end{thebibliography}
+	
+\end{document}
