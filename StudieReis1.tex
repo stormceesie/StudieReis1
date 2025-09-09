@@ -1,18 +1,17 @@
 % LaTeX template for BK5 documents IEEE based
 \documentclass{BK5}
-
+\usepackage{hyperref} % To be able to click on references etc
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{cite}
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref} % To be able to click on references etc
 \usepackage{lipsum}
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{tmi}
 \usepackage{float}
 
-\author{Stijn van Straten {\small (493809)}\\
+\author{Stijn van Straaten {\small (493809)}\\
 	Marijn van der Gracht {\small (499194)}\\
 	Tristan van Duuren {\small (480101)}\\
 	Florent Kegler {\small (514277)}
@@ -65,14 +64,13 @@
 	
 	\input{CommunicatiePlan}
 	
-	\section{Planning en aanpak}
+	\input{EvaluatieEnVerantwoording}
 	
-	\section{Budget en financiën}
-	
-	\section{Risicoanalyse en beheersmaatregelen}
-	
-	\section{Evaluatie en verantwoording}
-	
-	\section{Conclusie}
+	\begin{thebibliography}{00}
+		\bibitem{doran1981smart} G. T. Doran, ``There’s a S.M.A.R.T. way to write management’s goals and objectives,'' \textit{Management Review}, vol. 70, no. 11, pp. 35–36, 1981.  
+		\bibitem{pmibook2021} Project Management Institute, \textit{A Guide to the Project Management Body of Knowledge (PMBOK Guide)}, 7th ed. Newtown Square, PA: PMI, 2021.
+		\bibitem{deming1986out} 
+		W. E. Deming, \textit{Out of the Crisis}. Cambridge, MA: MIT Press, 1986.
+	\end{thebibliography}
 	
 \end{document}

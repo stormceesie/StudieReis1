@@ -164,15 +164,11 @@ bottom=3.5cm]{geometry}
 			
 		\end{minipage}
 		
-		\vspace{5cm}
+		\vspace{5.5cm}
 		
 		
 		\footnotesize\textit{%
-			\ifdefined\BKAINote
 			\BKAINote
-			\else
-			Dit verslag is taalkundig ondersteund met AI; de inhoud blijft mijn eigen verantwoordelijkheid.
-			\fi
 		}
 		
 	\end{titlepage}
