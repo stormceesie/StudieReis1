@@ -44,7 +44,7 @@ bottom=3.5cm]{geometry}
 	\ifnum\value{pagecount}>1 % Pas toe vanaf pagina 2
 	\AtBeginShipoutUpperLeft{%
 		\begin{tikzpicture}[remember picture, overlay]
-			\fill[bk-dark] (current page.north west) ++(2.7cm,0) -- (current page.north west) -- ++(0,-5.5cm) -- cycle;
+			\fill[bk-dark] (current page.north west) ++(3cm,0) -- (current page.north west) -- ++(0,-7cm) -- cycle;
 		\end{tikzpicture}
 	}
 	\fi
@@ -164,7 +164,7 @@ bottom=3.5cm]{geometry}
 			
 		\end{minipage}
 		
-		\vspace{4.4cm}
+		\vspace{5cm}
 		
 		
 		\footnotesize\textit{%
